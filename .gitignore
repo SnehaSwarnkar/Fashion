@@ -1,8 +1,8 @@
 # ── Frontend ────────────────────────────────────────────
-node_modules/
-dist/
-dist-ssr/
-*.local
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
 
 # ── Backend ─────────────────────────────────────────────
 backend/venv/
@@ -13,22 +13,18 @@ backend/**/*.pyc
 backend/**/*.pyo
 backend/.env
 
-# ── Backend data & uploads (user-generated) ─────────────
+# ── Backend data & uploads (user-generated, not in Git) ──
 backend/data/*.json
 backend/uploads/
 
-# ── Environment files ────────────────────────────────────
-.env
-.env.local
-.env.*.local
-
-# ── Editor / OS ──────────────────────────────────────────
-.vscode/
-.idea/
+# ── OS / editor ─────────────────────────────────────────
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# ── Logs ─────────────────────────────────────────────────
+# ── Logs ────────────────────────────────────────────────
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vite/
